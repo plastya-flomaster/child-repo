@@ -13,7 +13,7 @@
 
 #### switch back to tracking branch, fetch & rebase.
 git checkout upstream/temp
-git pull child-repo/master
+git pull child-repo master
 
 #### update the separate branch with changes from upstream
 git subtree split -q --prefix=specs --rejoin -b merging/temp
