@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "one": "git remote add -f child-repo git@github.com:plastya-flomaster/child-repo.git",
+    "two": "git subtree add --prefix specs child-repo master --squash"
   },
   "repository": {
     "type": "git",
