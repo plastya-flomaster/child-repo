@@ -11,3 +11,6 @@ paths:
   /process/start/{orderId}:
     post:
       $ref: operations/addCatalog.yaml
+  /process/start2/{orderId}:
+    post:
+      $ref: operations/addCatalog2.yaml
