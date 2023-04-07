@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+  - url: https://bg.alfabank.ru/api/v2
+    description: Прод
+  - url: https://aft-agent-test.moscow.alfaintra.net/api/v2
+    description: Тест
+paths:
+  /process/start/{orderId}:
+    post:
+      $ref: operations/addCatalog.yaml
