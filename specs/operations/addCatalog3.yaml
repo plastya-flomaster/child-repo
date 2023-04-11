@@ -1,0 +1,22 @@
+tags:
+  - order-controller
+operationId: addComment
+summary: Метод отправки сообщения по заявке
+parameters:
+  - name: orderId
+    in: path
+    required: true
+    schema:
+      type: string
+requestBody:
+  content:
+    application/json:
+      schema:
+        $ref: ../components/schemas/Catalog.yaml
+responses:
+  '201':
+    description: Сообщение успешно сохранено
+  '404':
+    description: >-
+      Сущности с указанными id не были найдены или у текущего пользователя нет
+      к ним доступа
