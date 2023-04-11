@@ -23,3 +23,13 @@ git checkout master
 git subtree merge -q --prefix=swagger --squash merging/temp
 
 ----
+
+## подключиться
+git remote add -f child-repo git@github.com:plastya-flomaster/child-repo.git
+
+git subtree add --prefix swagger child-repo master --squash
+
+## апдейт
+git subtree pull --prefix swagger child-repo master --squash
+
+
