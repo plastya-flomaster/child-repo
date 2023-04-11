@@ -14,8 +14,6 @@ requestBody:
       schema:
         $ref: ../components/schemas/Catalog.yaml
 responses:
-  '201':
-    description: Сообщение успешно сохранено
   '404':
     description: >-
       Сущности с указанными id не были найдены или у текущего пользователя нет
