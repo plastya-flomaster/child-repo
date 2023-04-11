@@ -35,4 +35,6 @@ git subtree pull --prefix swagger child-repo master --squash
 ##  мерж
 git subtree push --prefix swagger child-repo master
 
+## внести изменения
+git subtree push --prefix swagger child-repo master
 
